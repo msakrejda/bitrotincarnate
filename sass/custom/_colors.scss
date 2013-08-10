@@ -2,6 +2,16 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
+// From http://colorschemedesigner.com/#3i21Tf7fvw0w0
+// Primary Color:     	   274A4A 243838 0D3030 6AA5A5 7AA5A5
+// Complementary Color:	   7B5C41 5D4B3C 503015 BD997A BDA28C
+
+$header-bg: #274a4a;
+$nav-bg: desaturate(lighten(#7b5c41, 18), 5);
+$nav-bg-front: image-url('noise.png');
+$nav-bg-back: darken($nav-bg, 11);
+
+
 //$header-bg: #263347;
 //$subtitle-color: lighten($header-bg, 58);
 //$nav-bg: desaturate(lighten(#8fc17a, 18), 5);

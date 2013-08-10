@@ -1,2 +1,8 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+html {
+  background: $page-bg image-url('seattle-evergreen.jpg') top left no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
