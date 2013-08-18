@@ -12,6 +12,15 @@ $nav-bg-front: image-url('noise.png');
 $nav-bg-back: darken($nav-bg, 11);
 
 
+
+// Main Link Colors
+$link-color: lighten(#7aa5a5, 3) !default;
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
+$link-color-visited: #5d4b3c !default;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+
+
+
 //$header-bg: #263347;
 //$subtitle-color: lighten($header-bg, 58);
 //$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
