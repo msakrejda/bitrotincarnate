@@ -30,7 +30,7 @@ Josh Williams has [a fantastic post](http://blog.endpoint.com/2010/06/tracking-d
 about treating corruption; Josh's post and tips from my colleagues
 (and Postgres contributors) [Daniel Farina](https://twitter.com/danfarina)
 and [Peter Geogheghan](https://twitter.com/sternocera) were instrumental
-to helping me wrap my head around all the nuts and bolts here.
+in helping me wrap my head around all the nuts and bolts relevant here.
 
 Now before we dig in, note that the easiest recovery is one you don't need
 to perform at all. So how can you get a pristine copy of your database? Try your
@@ -527,7 +527,7 @@ LOG:  all server processes terminated; reinitializing
 ```
 
 Postgres is written defensively, but if its data is scrambled badly
-enough, it will stil occasionly wig out. With luck, it will recover in
+enough, it will still occasionally wig out. With luck, it will recover in
 a few seconds and you can continue treating the corruption, but
 subsequent attempts to read the affected pages are likely to cause
 repeat crashes. This means that any PL/pgSQL functions that rely on

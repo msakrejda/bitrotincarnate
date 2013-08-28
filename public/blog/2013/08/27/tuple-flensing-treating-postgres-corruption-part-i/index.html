@@ -119,7 +119,7 @@ getting the data out of a corrupt system; the next details restoring it.</p>
 about treating corruption; Josh&rsquo;s post and tips from my colleagues
 (and Postgres contributors) <a href="https://twitter.com/danfarina">Daniel Farina</a>
 and <a href="https://twitter.com/sternocera">Peter Geogheghan</a> were instrumental
-to helping me wrap my head around all the nuts and bolts here.</p>
+in helping me wrap my head around all the nuts and bolts relevant here.</p>
 
 <p>Now before we dig in, note that the easiest recovery is one you don&rsquo;t need
 to perform at all. So how can you get a pristine copy of your database? Try your
@@ -796,7 +796,7 @@ I couldn&rsquo;t solve with PL/pgSQL:</p>
 
 
 <p>Postgres is written defensively, but if its data is scrambled badly
-enough, it will stil occasionly wig out. With luck, it will recover in
+enough, it will still occasionally wig out. With luck, it will recover in
 a few seconds and you can continue treating the corruption, but
 subsequent attempts to read the affected pages are likely to cause
 repeat crashes. This means that any PL/pgSQL functions that rely on

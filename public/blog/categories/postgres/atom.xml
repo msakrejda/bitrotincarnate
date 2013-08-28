@@ -4,7 +4,7 @@
   <title><![CDATA[Category: postgres | Bit Rot Incarnate]]></title>
   <link href="http://bitrotincarnate.herokuapp.com/blog/categories/postgres/atom.xml" rel="self"/>
   <link href="http://bitrotincarnate.herokuapp.com/"/>
-  <updated>2013-08-27T01:25:45-07:00</updated>
+  <updated>2013-08-27T23:04:24-07:00</updated>
   <id>http://bitrotincarnate.herokuapp.com/</id>
   <author>
     <name><![CDATA[Maciek Sakrejda]]></name>
@@ -44,7 +44,7 @@ getting the data out of a corrupt system; the next details restoring it.</p>
 about treating corruption; Josh&rsquo;s post and tips from my colleagues
 (and Postgres contributors) <a href="https://twitter.com/danfarina">Daniel Farina</a>
 and <a href="https://twitter.com/sternocera">Peter Geogheghan</a> were instrumental
-to helping me wrap my head around all the nuts and bolts here.</p>
+in helping me wrap my head around all the nuts and bolts relevant here.</p>
 
 <p>Now before we dig in, note that the easiest recovery is one you don&rsquo;t need
 to perform at all. So how can you get a pristine copy of your database? Try your
@@ -563,7 +563,7 @@ LOG:  all server processes terminated; reinitializing
 </code></p>
 
 <p>Postgres is written defensively, but if its data is scrambled badly
-enough, it will stil occasionly wig out. With luck, it will recover in
+enough, it will still occasionally wig out. With luck, it will recover in
 a few seconds and you can continue treating the corruption, but
 subsequent attempts to read the affected pages are likely to cause
 repeat crashes. This means that any PL/pgSQL functions that rely on
