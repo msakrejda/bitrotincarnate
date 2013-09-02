@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Bit Rot Incarnate</title>
+  <title>Tuple Flensing II: Treating Postgres Corruption - Bit Rot Incarnate</title>
   <meta name="author" content="Maciek Sakrejda">
 
   
@@ -19,7 +19,7 @@ Postgres corruption. This post discusses reloading a set of data &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bitrotincarnate.herokuapp.com">
+  <link rel="canonical" href="http://bitrotincarnate.herokuapp.com/blog/2013/09/02/tuple-flensing-treating-postgres-corruption-part-ii">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Bit Rot Incarnate" type="application/atom+xml">
@@ -65,15 +65,12 @@ Postgres corruption. This post discusses reloading a set of data &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/09/02/tuple-flensing-treating-postgres-corruption-part-ii/">Tuple Flensing II: Treating Postgres Corruption</a></h1>
+      <h1 class="entry-title">Tuple Flensing II: Treating Postgres Corruption</h1>
     
     
       <p class="meta">
@@ -96,7 +93,7 @@ Postgres corruption. This post discusses reloading a set of data &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>Part Two: Ingress</h2>
+<div class="entry-content"><h2>Part Two: Ingress</h2>
 
 <p>This is the second part of the saga of treating a nasty case of
 Postgres corruption. This post discusses reloading a set of data that was
@@ -352,22 +349,16 @@ database. I hope the notes in these two posts come in useful should
 others be in the unfortunate position of dealing with corruption
 issues like these.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/27/tuple-flensing-treating-postgres-corruption-part-i/">Tuple Flensing I: Treating Postgres Corruption</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Maciek Sakrejda</span></span>
+
+      
 
 
 
@@ -379,47 +370,38 @@ issues like these.</p>
   
 
 
-<time datetime="2013-08-27T01:25:00-07:00" pubdate data-updated="true">Tue, 2013-08-27 01:25:00 PDT</time>
-        
-      </p>
+<time datetime="2013-09-02T10:21:00-07:00" pubdate data-updated="true">Mon, 2013-09-02 10:21:00 PDT</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/corruption/'>corruption</a>, <a class='category' href='/blog/categories/postgres/'>postgres</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bitrotincarnate.herokuapp.com/blog/2013/09/02/tuple-flensing-treating-postgres-corruption-part-ii/" data-via="deafbybeheading" data-counturl="http://bitrotincarnate.herokuapp.com/blog/2013/09/02/tuple-flensing-treating-postgres-corruption-part-ii/" >Tweet</a>
+  
+  
+  
+</div>
 
-
-  <div class="entry-content"><h2>Part One: Egress</h2>
-
-<p>While Postgres is an incredibly robust and defensively-written system,
-occasionally one does run into problems with data corruption. This can
-happen due to hardware issues, filesystem or other OS bugs, and
-sometimes, yes, even Postgres bugs. However, even when data corruption
-does occur, Postgres will generally contain the damage to specific
-chunks of data, and manual intervention will let you recover anything
-that was not affected.</p>
-
-<p>This is the story of lessons learned from treating an extensive case
-of such corruption in the course of my job with the <a href="https://addons.heroku.com/heroku-postgresql">Heroku Postgres</a>
-Department of Data. This post describes recognizing the problems and
-getting the data out of a corrupt system; the next details restoring it.</p>
-
-<p><small>All data and metadata is mocked out; no customer data was used in the making of this post.</small></p>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/08/27/tuple-flensing-treating-postgres-corruption-part-i/" title="Previous Post: Tuple Flensing I: Treating Postgres Corruption">&laquo; Tuple Flensing I: Treating Postgres Corruption</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/08/27/tuple-flensing-treating-postgres-corruption-part-i/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -440,7 +422,7 @@ getting the data out of a corrupt system; the next details restoring it.</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/deafbybeheading">@deafbybeheading</a> on GitHub
@@ -472,6 +454,7 @@ getting the data out of a corrupt system; the next details restoring it.</p>
 
   
 </aside>
+
 
     </div>
   </div>

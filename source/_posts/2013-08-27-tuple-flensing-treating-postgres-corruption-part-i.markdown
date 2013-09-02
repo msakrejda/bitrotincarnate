@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tuple Flensing: Treating Postgres Corruption"
+title: "Tuple Flensing I: Treating Postgres Corruption"
 date: 2013-08-27 01:25
 comments: true
 categories: [postgres, corruption]
