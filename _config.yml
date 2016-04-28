@@ -63,13 +63,13 @@ default_asides: [custom/asides/about.html, custom/asides/twitter.html, asides/re
 # ----------------------- #
 
 # Github repositories
-github_user: deafbybeheading
+github_user: uhoh-itsmaciek
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: deafbybeheading
+twitter_user: uhoh_itsmaciek
 twitter_tweet_button: true
 
 # Google +1
